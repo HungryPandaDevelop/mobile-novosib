@@ -1,0 +1,20 @@
+header {
+  margin: 0 0 36px;
+
+  h1,
+  .search-wrap {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  h1 {
+    margin-right: 30px;
+  }
+
+  .search-wrap {
+    margin-top: 6px;
+    max-width: 40%;
+    width: 100%;
+  }
+}

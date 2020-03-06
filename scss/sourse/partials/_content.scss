@@ -1,0 +1,28 @@
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 30px;
+
+}
+
+.cell-content {
+  h3 {
+    font-size: $mainTitleSize;
+    font-family: inherit;
+    margin: 0 0 16px;
+  }
+
+  .cell-inner {
+    border-radius: $borderRadisFull;
+    background: $whiteColor;
+    padding: 24px;
+  }
+}
+
+.cell-grid-4 {
+  grid-column: span 4;
+}
+
+.cell-grid-3 {
+  grid-column: span 3;
+}

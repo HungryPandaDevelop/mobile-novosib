@@ -1,0 +1,108 @@
+.sidebar {
+  @include positionElement(20%, 100vh);
+  min-height: 650px;
+  background: $blueColor;
+  padding-top: 58px;
+  padding-left: 30px;
+  font-size: $contentSecondSize;
+
+  .persone-container {
+    min-height: 15%;
+  }
+
+  .nav-first {
+    min-height: 50%;
+  }
+
+  .persone-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 100%;
+    margin-right: 2px;
+
+  }
+
+  h3 {
+    font-size: inherit;
+    display: inline-block;
+    width: calc(100% - 48px);
+  }
+
+  .persone-img,
+  h3 {
+    vertical-align: middle;
+  }
+
+  .persone-head {
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-family: inherit;
+    font-size: $contentThreeSize;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+
+    i,
+    a {
+      vertical-align: middle;
+    }
+
+    i {
+      background: $blackColor;
+      @include positionElement(28px, 28px);
+
+      img {
+        width: 100%;
+        display: none;
+
+      }
+    }
+
+    li {
+      margin: 0 0 8px;
+      padding-top: 4px;
+      padding-left: 38px;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: $whiteColor;
+
+        &:before {
+          content: "";
+          position: absolute;
+          @include positionElement(4px, 100%, 100%, 0, right);
+          background: $whiteColor;
+          margin-right: 26px;
+        }
+
+        i {
+          background: none;
+
+          img {
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+
+  .logo {
+    @include positionElement(70%, 70px, 0, 0, left, bottom);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

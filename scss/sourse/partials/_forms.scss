@@ -1,0 +1,25 @@
+input {
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: $borderRadisFull;
+}
+
+.search-ico {
+  @include positionElement(18px, 18px);
+  @include bgImageEl(url("../images/ico-search-gray.png"));
+}
+
+.search-wrap {
+  position: relative;
+
+  .search-ico {
+    margin: 10px;
+  }
+
+  input {
+    padding-left: 40px;
+  }
+}

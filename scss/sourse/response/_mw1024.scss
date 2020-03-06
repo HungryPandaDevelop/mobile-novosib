@@ -1,0 +1,37 @@
+$secondTitleSize: 18px;
+
+// main-page
+.circle-front {
+  transform: scale(0.5) translateY(-50%);
+
+  &.active {
+    transform: scale(0.6) translateX(-35%) translateY(-50%);
+  }
+}
+
+// main-page
+
+// recipe
+.recipes-item .recipes-item-header {
+  padding-right: 35px;
+}
+
+.recipes-item.right .recipes-item-header {
+  padding-left: 35px;
+}
+
+
+
+
+.recipes-row-header .time {
+  font-size: $secondTitleSize;
+  top: 176px;
+}
+
+// recipe
+// products
+.chef-front-info .img-balls {
+  margin-left: -0px;
+}
+
+// products
