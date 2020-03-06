@@ -164,6 +164,23 @@ input {
 
 /*-----forms-----*/
 /*-----sidebar-----*/
+.sidebar-wrap {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: block;
+  z-index: auto;
+}
+
+.sidebar-inner {
+  max-width: 1440px;
+  min-width: 998px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .sidebar {
   width: 20%;
   height: 100vh;
@@ -300,7 +317,16 @@ header .search-wrap {
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 30px;
 }
+.content-grid .col-4 {
+  grid-column: span 4;
+}
+.content-grid .col-3 {
+  grid-column: span 3;
+}
 
+.cell-content {
+  margin: 0 0 15px;
+}
 .cell-content h3 {
   font-size: 24px;
   font-family: inherit;
@@ -309,15 +335,118 @@ header .search-wrap {
 .cell-content .cell-inner {
   border-radius: 20px 20px 20px 20px;
   background: #ffffff;
-  padding: 24px;
+  padding: 16px 24px;
+}
+.cell-content .cell-inner .line {
+  padding: 5px 5px 5px 10px;
+  border-bottom: 1px solid #979797;
+}
+.cell-content .cell-inner .line:last-child {
+  border-bottom: 0;
+}
+.cell-content .cell-inner .line.red {
+  color: #e02020;
+}
+.cell-content .cell-inner .line-edit-price {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+.cell-content .cell-inner .line-edit-price i {
+  font-style: normal;
+  width: 50%;
+  text-align: right;
+}
+.cell-content .cell-inner .line-edit-price a {
+  text-decoration: none;
+  background: #00b7f4;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 1px 17px;
+  margin-top: -2px;
+}
+.cell-content .cell-inner .line-edit-price a:hover {
+  background: #e02020;
+}
+.cell-content .cell-inner .line-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.cell-content .cell-inner .add-link {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 0;
+}
+.cell-content .cell-inner .add-link:hover {
+  color: #e02020;
+}
+.cell-content .cell-inner .pay_price-box {
+  text-align: center;
+  margin: 0 0 8px;
+}
+.cell-content .cell-inner .pay_price-box img {
+  width: 110px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 0 8px;
+}
+.cell-content .cell-inner .pay_price-box h3 {
+  font-size: 24px;
+  margin: 0 0 8px;
 }
 
-.cell-grid-4 {
-  grid-column: span 4;
+.graf-container {
+  margin: 0 0 15px;
 }
-
-.cell-grid-3 {
-  grid-column: span 3;
+.graf-container h2 {
+  font-family: inherit;
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+.graf-container .graf-content {
+  height: 300px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+.graf-container .graf-content .graf-pillar-outer {
+  width: 17%;
+  height: 100%;
+}
+.graf-container .graf-content .graf-pillar-inner {
+  height: calc(100% - 24px);
+  position: relative;
+}
+.graf-container .graf-content .graf-pillar-obj {
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  z-index: auto;
+  background: #00b7f4;
+}
+.graf-container .graf-content .graf-pillar-obj .graf-pillar-count {
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 100%;
+  position: absolute;
+  display: block;
+  z-index: auto;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.graf-container .graf-content h4 {
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  border-top: 1px solid #979797;
+  padding-top: 4px;
 }
 
 /*-----content-----*/

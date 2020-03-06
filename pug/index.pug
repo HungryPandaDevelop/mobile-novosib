@@ -17,39 +17,130 @@ html
 						input(type="text")
 						i.search-ico
 			.content-grid
-				.cell-grid-4.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-				.cell-grid-3.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-				.cell-grid-3.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-				.cell-grid-4.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-				.cell-grid-3.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-				.cell-grid-3.cell-content
-					h3 Кому нужно позвонить 
-					.cell-inner
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
-						| dsfda sfas sdfdskfh dsfghag jhfdgjfhdg;fdhg fdigh sd;fghi fds;ghdfs
+				.col-4
+					.cell-content
+						h3 Кому нужно позвонить 
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5]
+								.line.red
+									| Iphone 6s plus / #1222
+							.line
+								| Iphone 6s plus / #1222
+							.add-link еще+
+					.cell-content
+						h3 Кассы на точках
+						.cell-inner
+							.line.line-edit-price
+								span Хилок
+								i $281.45
+								a(href="#") Ред. 
+							.line.line-edit-price
+								span Хилок
+								i $281.45
+								a(href="#") Ред. 
+							.line.line-edit-price
+								span Хилок
+								i $281.45
+								a(href="#") Ред. 
+					.cell-content
+						h3 Устройства для диагностики
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5]
+								.line.red
+									| Iphone 6s plus / #1222
+							.line
+								| Iphone 6s plus / #1222
+					.cell-content
+						h3 Устройства для ремонта
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5]
+								.line.red
+									| Iphone 6s plus / #1222
+							.line
+								| Iphone 6s plus / #1222
+				.col-3
+					.cell-content
+						h3 Срочный ремонт
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5, 5, 5]
+								.line
+									| Iphone 6s plus / #1222
+					.cell-content
+						h3 Ваша зарплата 
+						.cell-inner
+							.pay_price-box
+								img(src="../images/ico-4.jpg")
+								h3 23440.55 Руб.
+								div Ваша зарплата
+							.line
+								| Вы: Инженер
+							.line
+								| Ваш процент: 20%
+					.cell-content
+						h3 Устройств для перевозки 
+						.cell-inner
+							.line.line-flex
+								span Хилок
+								span 115
+							.line.line-flex
+								span Ценр
+								span 184
+							.line.line-flex
+								span Название
+								span 184
+				.col-3
+					.cell-content
+						h3 Устройства на выдачу
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5, 5, 5]
+								.line
+									| Iphone 6s plus / #1222
+					.cell-content
+						h3 Если поля пустые
+						.cell-inner
+							.line На данный моент нет информации
+			.graf-container
+				h2 Выручка за вчера
+				.graf-content
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 10%;")
+								.graf-pillar-count 28568
+						h4 Название точки
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 20%;")
+								.graf-pillar-count 39656
+						h4 Название точки
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 30%;")
+								.graf-pillar-count 36468
+						h4 Название точки
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 50%;")
+								.graf-pillar-count 26117
+						h4 Название точки
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 25%;")
+								.graf-pillar-count 23264
+						h4 Название точки
+					.graf-pillar-outer
+						.graf-pillar-inner
+							.graf-pillar-obj(style="height: 90%;")
+								.graf-pillar-count 25679
+						h4 Название точки
+			.graf-container
+				h2 Статистика выручки
+				.graf-content
+			.graf-container
+				h2 
+					|Статистика устройств: диагностированных, 
+					b отремонтированных, 
+					|все
+				.graf-content
 		// main-container
 		// footer
 		include partials/footer.pug

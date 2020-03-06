@@ -1,3 +1,14 @@
+.sidebar-wrap {
+  @include positionElement(100%, 100%, 0, 0, left, top, auto, block, fixed);
+}
+
+.sidebar-inner {
+  max-width: 1440px;
+  min-width: 998px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .sidebar {
   @include positionElement(20%, 100vh);
   min-height: 650px;
