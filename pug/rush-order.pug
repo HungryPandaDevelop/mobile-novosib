@@ -1,0 +1,130 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+ 
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		 
+		// main-container
+		.main-container
+			header
+				h1 Создать заказ 
+					b срочный
+			.content-grid
+				.col-4
+					.cell-content
+						h3 Информация о заказе
+						.cell-inner
+							div
+								h4.first Тип оборудования
+								label(for="select") Выбирите тип...
+								select(name="select").style-select
+									option 1
+									option 2
+									option 3
+								input(type="text" placeholder="Введите тип")
+							div
+								h4 Оборудование
+								input(type="text" placeholder="Введите бренд и модель")
+							div
+								h4 Серийный номер
+								input(type="text" placeholder="Введите IMAI")
+							div
+								h4 Качество детали
+								.checkbox
+									span
+									input(type="checkbox" id="id5")
+									label(for="id5") Оригинал
+								.checkbox
+									span
+									input(type="checkbox" id="id6")
+									label(for="id6") Аналог
+								.checkbox
+									span
+									input(type="checkbox" id="id7")
+									label(for="id7") Китай
+							div
+								h4 Работа
+								input(type="text" placeholder="Введите тип работы")
+							div
+								h4 Запчасть
+								input(type="text" placeholder="Введите запчать")
+
+				.col-6
+					.cell-content 
+						h3 Информация о клиенте
+						.cell-inner
+							.content-grid
+								.col-6
+									div
+										h4 Телефон
+										input(type="text" placeholder="8 (999) 777-77-77").phone-mask
+									div
+										h4 Личные данные
+										input(type="text" placeholder="Фамилия")
+										input(type="text" placeholder="Имя")
+										input(type="text" placeholder="Отчество")
+									div
+										h4 Личная скидка
+										label(for="select2") 0%
+										select(name="select2").style-select
+											option 1
+											option 2
+											option 3
+									div
+										h4 Откуда пришел
+										label(for="select3") Сайт
+										select(name="select3").style-select
+											option 1
+											option 2
+											option 3
+								.col-4
+									h4 Заявки клиента
+									each val in [1, 2, 3, 4, 5, 5]
+										.line
+											| Iphone 6s plus / #1222
+
+					.cell-content 
+						h3 Оплата
+						.cell-inner
+							.content-grid
+								.col-5
+									div
+										h4 Тип оплаты
+										.checkbox
+											span
+											input(type="radio" id="id13" name="pay-type")
+											label(for="id13") Наличными
+										.checkbox
+											span
+											input(type="radio" id="id14" name="pay-type")
+											label(for="id14") Безналичными
+										.checkbox
+											span
+											input(type="radio" id="id15" name="pay-type")
+											label(for="id15") Смешанный
+									div
+										h4 Стоимость
+										input(type="text" placeholder="Общая стоимость...")
+										input(type="text" placeholder="Стоимость ремонта...")
+										input(type="text" placeholder="Стоимость запчасти...")
+										input(type="text" placeholder="Предоплата...")
+								.col-5
+									div
+										h4 Принятые средства
+										input(type="text" placeholder="Наличные средсва")
+										input(type="text" placeholder="Безналичные средства")
+										input(type="text" placeholder="Всего принято")
+						.btn-wrap.btns-justify
+							a.btn.btn-large.green(href="#") Принять
+							a.btn.btn-large.border-red(href="#") Срочный заказ
+							a.btn.btn-large.border-red(href="#") Отмена
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

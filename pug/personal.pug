@@ -1,0 +1,43 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		
+		// main-container
+		.main-container
+			header
+				h1 Сотрудники
+			.search-wrap.search-table
+				input(type="text")
+				i.search-ico
+			.cell-content.table-container
+				.cell-inner
+					table
+						thead
+							tr
+								th ID
+								th Сотрудник
+								th Телефон
+								th Процент 
+								th E-mail 
+								th Дата регистрации
+						tbody
+							each val in ['1', '1', '1', '1', '1', '1', '1']
+								tr
+									td #362
+									td Ronald Garcia
+									td 8 (777) 777-77-77
+									td 20%
+									td name@domain.ru
+									td 11:11 12.12.2009
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

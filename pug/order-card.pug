@@ -1,0 +1,92 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+  
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		 
+		// main-container
+		.main-container
+			header
+				h1 Iphone 6s plus / #1222
+			.content-grid
+				.col-4
+					.cell-content.edited-content
+						h3 Информация о заказе
+						.cell-inner
+							div
+								h4.first Тип оборудования
+								.edited-text Телефон 
+							div
+								h4 Оборудование
+								.edited-text IPhone 6s plus 
+							div
+								h4 Серийный номер
+								.edited-text 32342348FDS323FS4FD2
+							div
+								h4 Внешний вид
+								.edited-text Потертости; Царапины; Описание другого в несколько строк
+							div
+								h4 Качество детали
+								.edited-text Оригинал; Аналог;
+							div
+								h4 Работа
+								.edited-text IPhone 6s plus замена экрана оригинал
+								.edited-text IPhone 6s plus замена экрана аналог
+							div
+								h4 Запчасть
+								.edited-text Экранный модуль IPhone 6s plus аналог
+							div
+								h4 Комплектация
+								.edited-text Зарядное устройство; Чехол; Описание другого в несколько строк
+							div
+								h4 Комментарий
+								.edited-text Описание комментария в несколько строк тест
+
+				.col-6
+					.cell-content
+						h3 Информация о клиенте
+						.cell-inner
+							.content-grid
+								.col-6.edited-content 
+									div
+										h4 Телефон
+										.edited-text 
+											a(href="#") 8 (913) 999-77-77
+									div
+										h4 Личные данные
+										.edited-text Иванов
+										.edited-text Иван
+										.edited-text Иванович 
+									div
+										h4 Личная скидка
+										.edited-text Иванов 0%
+									div
+										h4 Откуда пришел
+										.edited-text Сайт
+								.col-4
+									h4 Заявки клиента
+									each val in [1, 2, 3, 4, 5, 5]
+										.line
+											| Iphone 6s plus / #1222
+
+					.cell-content 
+						h3 Оплата
+						.cell-inner
+							each val in [1, 2, 3, 4, 5, 5]
+								.line.line-flex
+									span Заказ ожидает перемещения в пункт выдачи
+									span 11:11 12.12.2009
+						.btn-wrap.btns-justify
+							a.btn.btn-large.green(href="#") Действие 1
+							a.btn.btn-large.border-red(href="#") Действие 2
+							a.btn.btn-large.border-red(href="#") Действие 3
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

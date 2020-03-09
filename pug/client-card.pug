@@ -1,0 +1,48 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+  
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		 
+		// main-container
+		.main-container
+			header
+				h1 Фамилия Имя Отчество 
+			.content-grid
+				.col-4
+					.cell-content.edited-content
+						h3 Фамилия Имя Отчество 
+						.cell-inner
+							div
+								h4.first Телефон
+								.edited-text 8 (913) 999-77-77 
+							div
+								h4 Личная скидка
+								.edited-text 0%
+							div
+								h4 Откуда пришел
+								.edited-text Сайт
+
+				.col-6
+					.cell-content
+						h3 Все заявки клиента
+						.cell-inner
+							.line.green
+								| #1222 / Iphone 6s plus / 19.11.2019
+							each val in [1, 2, 3, 4, 5, 5]
+								.line
+									| #1222 / Iphone 6s plus / 19.11.2019
+					.btn-wrap.btns-justify
+						a.btn.btn-large.green(href="#") Действие 1
+						a.btn.btn-large.border-red(href="#") Действие 2
+						a.btn.btn-large.border-red(href="#") Действие 3
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

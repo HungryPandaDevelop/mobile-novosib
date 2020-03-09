@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- head-->
+    <head>
+      <link href="../css/style.css" type="text/css" rel="stylesheet">
+      <link href="../css/response.css" type="text/css" rel="stylesheet">
+      <script src="../js/jquery-3.3.1.min.js"></script>
+      <script src="../js/control-style.js"></script>
+      <script src="../js/common.js"></script>
+    </head>
+    <!-- head-->
+    <!-- sidebar-->
+    <div class="sidebar-wrap">
+      <div class="sidebar-inner">
+        <div class="sidebar">
+          <div class="persone-container">
+            <div class="persone-head"><img class="persone-img" src="../images/face-1.jpg">
+              <h3>Corabelle Durrad</h3>
+            </div>
+            <h4>Должность</h4>
+          </div>
+          <nav class="nav-first">
+            <ul class="ln">
+              <li class="active"><a href="#"><i><img src="../images/ico-view.svg"></i><span>Главная</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Создать заказ</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Продать товар</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Клиенты</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Сотрудники</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Заказы</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Поиск по типу работы</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Склад</span></a></li>
+            </ul>
+          </nav>
+          <nav class="nav-second">
+            <ul class="ln">
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Настройки</span></a></li>
+              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Выход</span></a></li>
+            </ul>
+          </nav>
+          <div class="logo"><img src="../images/logo.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar-->
+    <!-- main-container-->
+    <div class="main-container">
+      <header>
+        <h1>Создать заказ <b>срочный</b></h1>
+      </header>
+      <div class="content-grid">
+        <div class="col-4">
+          <div class="cell-content">
+            <h3>Информация о заказе</h3>
+            <div class="cell-inner">
+              <div>
+                <h4 class="first">Тип оборудования</h4>
+                <label for="select">Выбирите тип...</label>
+                <select class="style-select" name="select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <input type="text" placeholder="Введите тип">
+              </div>
+              <div>
+                <h4>Оборудование</h4>
+                <input type="text" placeholder="Введите бренд и модель">
+              </div>
+              <div>
+                <h4>Серийный номер</h4>
+                <input type="text" placeholder="Введите IMAI">
+              </div>
+              <div>
+                <h4>Качество детали</h4>
+                <div class="checkbox"><span></span>
+                  <input type="checkbox" id="id5">
+                  <label for="id5">Оригинал</label>
+                </div>
+                <div class="checkbox"><span></span>
+                  <input type="checkbox" id="id6">
+                  <label for="id6">Аналог</label>
+                </div>
+                <div class="checkbox"><span></span>
+                  <input type="checkbox" id="id7">
+                  <label for="id7">Китай</label>
+                </div>
+              </div>
+              <div>
+                <h4>Работа</h4>
+                <input type="text" placeholder="Введите тип работы">
+              </div>
+              <div>
+                <h4>Запчасть</h4>
+                <input type="text" placeholder="Введите запчать">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="cell-content"> 
+            <h3>Информация о клиенте</h3>
+            <div class="cell-inner">
+              <div class="content-grid">
+                <div class="col-6">
+                  <div>
+                    <h4>Телефон</h4>
+                    <input class="phone-mask" type="text" placeholder="8 (999) 777-77-77">
+                  </div>
+                  <div>
+                    <h4>Личные данные</h4>
+                    <input type="text" placeholder="Фамилия">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Отчество">
+                  </div>
+                  <div>
+                    <h4>Личная скидка</h4>
+                    <label for="select2">0%</label>
+                    <select class="style-select" name="select2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div>
+                    <h4>Откуда пришел</h4>
+                    <label for="select3">Сайт</label>
+                    <select class="style-select" name="select3">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h4>Заявки клиента</h4>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                  <div class="line">Iphone 6s plus / #1222</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell-content"> 
+            <h3>Оплата</h3>
+            <div class="cell-inner">
+              <div class="content-grid">
+                <div class="col-5">
+                  <div>
+                    <h4>Тип оплаты</h4>
+                    <div class="checkbox"><span></span>
+                      <input type="radio" id="id13" name="pay-type">
+                      <label for="id13">Наличными</label>
+                    </div>
+                    <div class="checkbox"><span></span>
+                      <input type="radio" id="id14" name="pay-type">
+                      <label for="id14">Безналичными</label>
+                    </div>
+                    <div class="checkbox"><span></span>
+                      <input type="radio" id="id15" name="pay-type">
+                      <label for="id15">Смешанный</label>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Стоимость</h4>
+                    <input type="text" placeholder="Общая стоимость...">
+                    <input type="text" placeholder="Стоимость ремонта...">
+                    <input type="text" placeholder="Стоимость запчасти...">
+                    <input type="text" placeholder="Предоплата...">
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div>
+                    <h4>Принятые средства</h4>
+                    <input type="text" placeholder="Наличные средсва">
+                    <input type="text" placeholder="Безналичные средства">
+                    <input type="text" placeholder="Всего принято">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrap btns-justify"><a class="btn btn-large green" href="#">Принять</a><a class="btn btn-large border-red" href="#">Срочный заказ</a><a class="btn btn-large border-red" href="#">Отмена</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-container-->
+    <!-- footer-->
+    <!-- footer-->
+  </body>
+</html>

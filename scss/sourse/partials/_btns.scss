@@ -1,0 +1,91 @@
+.btn {
+  text-decoration: none;
+  background: $blueColor;
+  color: $whiteColor;
+  border-radius: 5px;
+  padding: 1px 17px;
+  margin-top: -2px;
+  border: 1px solid $blueColor;
+  text-align: center;
+
+  &:hover {
+    background: $redColor;
+    border-color: $redColor;
+  }
+
+  &.green {
+    background: $greenColor;
+    border-color: $greenColor;
+    color: $blackColor;
+
+    &:hover {
+      background: $redColor;
+      border-color: $redColor;
+      color: $whiteColor;
+    }
+  }
+
+  &.border-red {
+    background: none;
+    border-color: $redColorLight;
+    color: $blackColor;
+
+    &:hover {
+      background: $redColor;
+      border-color: $redColor;
+      color: $whiteColor;
+    }
+  }
+}
+
+.btn-empty {
+  background: none;
+  color: $blueColor;
+
+  &:hover {
+    background: $blueColor;
+    color: $whiteColor;
+    border-color: $blueColor;
+  }
+}
+
+.btn-large {
+  font-size: $contentSecondSize;
+  font-family: "medium";
+  padding: 11px 10px;
+  border-width: 2px;
+}
+
+
+.btns-justify {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    width: 32%;
+  }
+
+  .large-width {
+    width: 66%;
+  }
+
+}
+
+.add-link {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 0;
+
+  &:hover {
+    color: $redColor;
+  }
+
+  &.large {
+    font-size: $contentSecondSize;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

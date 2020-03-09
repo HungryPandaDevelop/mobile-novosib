@@ -1,0 +1,46 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+ 
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		
+		// main-container
+		.main-container
+			header
+				h1 Склад
+			.search-wrap.search-table
+				input(type="text")
+				i.search-ico
+			.cell-content.table-container
+				.cell-inner
+					table
+						thead
+							tr
+								th ID заказа
+								th Штрихкод
+								th Название
+								th Устройство
+								th Колличество
+								th Где находится
+								th Дата приема
+						tbody
+							each val in ['1', '1', '1', '1', '1', '1', '1']
+								tr
+									td #362
+									td 432443248234
+									td Дисплейный можудб
+									td IPhone 6s plus
+									td 268
+									td IPhone 6s plus
+									td 
+										a(href="#").btn.btn-empty Ред. 
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

@@ -3,6 +3,14 @@
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 30px;
 
+  .col-6 {
+    grid-column: span 6;
+  }
+
+  .col-5 {
+    grid-column: span 5;
+  }
+
   .col-4 {
     grid-column: span 4;
   }
@@ -21,10 +29,21 @@
     margin: 0 0 16px;
   }
 
+  h4 {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 8px 0 8px 10px;
+
+    &.first {
+      margin-top: 0;
+    }
+  }
+
   .cell-inner {
     border-radius: $borderRadisFull;
     background: $whiteColor;
     padding: 16px 24px;
+    margin: 0 0 16px;
 
     .line {
       padding: 5px 5px 5px 10px;
@@ -36,6 +55,10 @@
 
       &.red {
         color: $redColor;
+      }
+
+      &.green {
+        color: $greenColor;
       }
     }
 
@@ -49,36 +72,14 @@
         width: 50%;
         text-align: right;
       }
-
-      a {
-        text-decoration: none;
-        background: $blueColor;
-        color: $whiteColor;
-        border-radius: 5px;
-        padding: 1px 17px;
-        margin-top: -2px;
-
-        &:hover {
-          background: $redColor;
-        }
-      }
     }
 
     .line-flex {
       display: flex;
       justify-content: space-between;
-
     }
 
-    .add-link {
-      cursor: pointer;
-      text-align: center;
-      padding: 5px 0;
 
-      &:hover {
-        color: $redColor;
-      }
-    }
 
     .pay_price-box {
       text-align: center;
@@ -96,7 +97,24 @@
         margin: 0 0 8px;
       }
     }
+
+
   }
+
+  .btn-wrap {
+    margin-top: 45px;
+  }
+}
+
+.edited-content {
+  h4 {
+    margin-left: 0;
+  }
+}
+
+.edited-text {
+  font-size: $contentSecondSize;
+  font-family: "medium";
 }
 
 .graf-container {
@@ -146,6 +164,4 @@
       padding-top: 4px;
     }
   }
-
-
 }

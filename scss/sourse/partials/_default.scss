@@ -3,10 +3,12 @@ $blackColor: #383b42;
 
 $blueColor: #00b7f4;
 $redColor: #e02020;
+$redColorLight: rgba(224, 32, 32, 0.5);
+$greenColor: #4cd964;
 
 $grayColor: #ecf0f6;
 $grayColorDark: #979797;
-
+$grayColorLight: #ccc;
 
 $contentSize: 14px;
 $contentSecondSize: 18px;
@@ -152,6 +154,10 @@ h6 {
 
 h1 {
 	font-size: $secondTitleSize;
+
+	b {
+		color: $redColor;
+	}
 }
 
 h2 {

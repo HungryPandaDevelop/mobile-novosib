@@ -1,0 +1,44 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		
+		// main-container
+		.main-container
+			header
+				h1 Работы
+			.search-wrap.search-table
+				input(type="text" placeholder="Введите тип работы…")
+				i.search-ico
+			.cell-content.table-container
+				.cell-inner
+					table
+						thead
+							tr
+								th ID
+								th Модель
+								th Статус
+								th Устройство
+								th Клиент
+								th Создать заказ 
+						tbody
+							each val in ['1', '1', '1', '1', '1', '1', '1']
+								tr
+									td #362
+									td Ronald Garcia
+									td Ожидает перевозки
+									td IPhone 6s plus
+									td Ronald Garcia
+									td 
+										a(href="#").btn.btn-empty Создать 
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+
