@@ -1,0 +1,74 @@
+.element-show {
+  position: 0;
+  visibility: hidden;
+}
+
+.element-show.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-wrapper {
+  @include positionElement(100%, 100%, 0, 0, left, top, 3, flex, fixed);
+  backdrop-filter: blur(5px);
+}
+
+.popup {
+  max-width: 560px;
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  background: #ecf0f6;
+  position: relative;
+  border-radius: $borderRadisFull;
+
+  &.large-popup {
+    max-width: 1140px;
+  }
+
+  .close {
+    @include positionElement(20px, 20px, 0, 0, right, top);
+    margin: 20px;
+    cursor: pointer;
+    @include bgImageEl(url("../images/close.png"));
+  }
+
+  h2 {
+    font-size: $secondTitleSize;
+    margin: 0 0 26px;
+  }
+
+  h4 {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 8px 0 8px 0px;
+  }
+
+  .btn-wc {
+    text-align: center;
+    margin-top: 40px;
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .special-checkbox {
+    justify-content: unset;
+    margin: 0 0 34px;
+
+    .sc-item {
+      width: 26%;
+      padding: 3px 0;
+      margin-right: 15px;
+      color: $whiteColor;
+      background: $blueColor;
+
+      &.active,
+      &:hover {
+        background: $whiteColor;
+        color: $blueColor;
+      }
+    }
+  }
+}

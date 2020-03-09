@@ -9,6 +9,7 @@ textarea,
   border: solid 2px $grayColorLight;
   padding: 4px 8px;
   margin: 0 0 8px;
+  background: $whiteColor;
 
   &:focus {
     outline: 0;
@@ -26,7 +27,8 @@ textarea {
   @include bgImageEl(url("../images/ico-search-gray.png"));
 }
 
-.search-wrap {
+.search-wrap,
+.circle-input-wrap {
   position: relative;
 
   .search-ico {
@@ -184,6 +186,7 @@ textarea {
     border-radius: 5px;
     border: solid 1px $blueColor;
     position: relative;
+    text-align: center;
     cursor: pointer;
 
     img {

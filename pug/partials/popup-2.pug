@@ -1,0 +1,28 @@
+.popup-wrapper.element-show(data-showEl="0").show
+  .popup.large-popup
+    .close
+    h2 Выбирите тип работы
+    .search-wrap.search-table
+      input(type="text" placeholder="Введите тип работы…")
+      i.search-ico
+    .cell-content.table-container
+      .cell-inner
+        table
+          thead
+            tr
+              th ID
+              th Модель
+              th Статус
+              th Устройство
+              th Клиент
+              th Состояние
+          tbody
+            each val in ['1', '1', '1', '1', '1', '1', '1']
+              tr
+                td #362
+                td Ronald Garcia
+                td Ожидает перевозки
+                td IPhone 6s plus
+                td Ronald Garcia
+                td 
+                  a(href="#").btn.btn-empty Доб. 

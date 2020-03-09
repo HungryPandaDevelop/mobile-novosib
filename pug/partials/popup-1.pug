@@ -1,0 +1,27 @@
+.popup-wrapper.element-show(data-showEl="0").show
+  .popup
+    .close
+    h2 Изменение кассы
+    .special-checkbox
+      .sc-item.active Выдача
+      .sc-item Внесение
+      .sc-item Перемещение
+    div.circle-input-wrap
+      h4 Сумма
+      input(type="text")
+    div
+      h4 Статья расходов
+      label(for="select2") Зарплата
+      select(name="select2").style-select
+        option 1
+        option 2
+        option 3
+    div
+      h4 Кому
+      label(for="select2") Сергей Сергеевский
+      select(name="select2").style-select
+        option 1
+        option 2
+        option 3
+    .btn-wc 
+      a.btn.btn-large.green Принять

@@ -227,6 +227,7 @@ textarea,
   border: solid 2px #ccc;
   padding: 4px 8px;
   margin: 0 0 8px;
+  background: #ffffff;
 }
 input:focus,
 textarea:focus,
@@ -254,13 +255,16 @@ textarea {
   background-image: url("../images/ico-search-gray.png");
 }
 
-.search-wrap {
+.search-wrap,
+.circle-input-wrap {
   position: relative;
 }
-.search-wrap .search-ico {
+.search-wrap .search-ico,
+.circle-input-wrap .search-ico {
   margin: 9px 10px;
 }
-.search-wrap input {
+.search-wrap input,
+.circle-input-wrap input {
   border-radius: 20px 20px 20px 20px;
   border: 0;
   padding: 10px 15px;
@@ -268,7 +272,8 @@ textarea {
   padding-left: 40px;
   font-size: 18px;
 }
-.search-wrap input:focus {
+.search-wrap input:focus,
+.circle-input-wrap input:focus {
   outline: 0px;
   box-shadow: 0 5px 24px rgba(0, 152, 202, 0.1);
 }
@@ -391,6 +396,7 @@ textarea {
   border-radius: 5px;
   border: solid 1px #00b7f4;
   position: relative;
+  text-align: center;
   cursor: pointer;
 }
 .special-checkbox .sc-item img {
@@ -417,6 +423,89 @@ textarea {
 }
 
 /*-----forms-----*/
+/*-----popup-----*/
+.element-show {
+  position: 0;
+  visibility: hidden;
+}
+
+.element-show.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-wrapper {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.popup {
+  max-width: 560px;
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  background: #ecf0f6;
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
+}
+.popup.large-popup {
+  max-width: 1140px;
+}
+.popup .close {
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  z-index: auto;
+  margin: 20px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/close.png");
+}
+.popup h2 {
+  font-size: 36px;
+  margin: 0 0 26px;
+}
+.popup h4 {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 8px 0 8px 0px;
+}
+.popup .btn-wc {
+  text-align: center;
+  margin-top: 40px;
+}
+.popup .btn-wc .btn {
+  width: 50%;
+}
+.popup .special-checkbox {
+  justify-content: unset;
+  margin: 0 0 34px;
+}
+.popup .special-checkbox .sc-item {
+  width: 26%;
+  padding: 3px 0;
+  margin-right: 15px;
+  color: #ffffff;
+  background: #00b7f4;
+}
+.popup .special-checkbox .sc-item.active, .popup .special-checkbox .sc-item:hover {
+  background: #ffffff;
+  color: #00b7f4;
+}
+
+/*-----popup-----*/
 /*-----sidebar-----*/
 .sidebar-wrap {
   width: 100%;
