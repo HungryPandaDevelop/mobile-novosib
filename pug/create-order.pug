@@ -23,9 +23,9 @@ html
 								h4.first Тип оборудования
 								.special-checkbox
 									each val in [1, 2, 3, 4, 5]
-										.sc-item
-											img(src="../images/ico-view.svg")
-											img(src="../images/ico-4.jpg").img-hover
+										.sc-item.in-img
+											img(src="../images/"+val+".png")
+											img(src="../images/"+val+".png").img-hover
 								input(type="text" placeholder="Введите тип")
 							div
 								h4 Оборудование

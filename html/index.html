@@ -6,6 +6,7 @@
     <link href="../css/style.css" type="text/css" rel="stylesheet">
     <link href="../css/response.css" type="text/css" rel="stylesheet">
     <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/Chart.min.js"></script>
     <script src="../js/control-style.js"></script>
     <script src="../js/common.js"></script>
   </head>
@@ -23,23 +24,23 @@
           </div>
           <nav class="nav-first">
             <ul class="ln">
-              <li class="active"><a href="#"><i><img src="../images/ico-view.svg"></i><span>Главная</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Создать заказ</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Продать товар</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Клиенты</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Сотрудники</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Заказы</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Поиск по типу работы</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Склад</span></a></li>
+              <li class="active"><a href="#"><i><img src="../images/home.png"></i><span>Главная</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Создать заказ</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Продать товар</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Клиенты</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Сотрудники</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Заказы</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Поиск по типу работы</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Склад</span></a></li>
             </ul>
           </nav>
           <nav class="nav-second">
             <ul class="ln">
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Настройки</span></a></li>
-              <li> <a href="#"><i><img src="../images/ico-view.svg"></i><span>Выход</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Настройки</span></a></li>
+              <li> <a href="#"><i><img src="../images/home.png"></i><span>Выход</span></a></li>
             </ul>
           </nav>
-          <div class="logo"><img src="../images/logo.jpg"></div>
+          <div class="logo"><img src="../images/logo.png"></div>
         </div>
       </div>
     </div>
@@ -117,7 +118,7 @@
           <div class="cell-content">
             <h3>Ваша зарплата </h3>
             <div class="cell-inner">
-              <div class="pay_price-box"><img src="../images/ico-4.jpg">
+              <div class="pay_price-box"><img src="../images/payment-method.png">
                 <h3>23440.55 Руб.</h3>
                 <div>Ваша зарплата</div>
               </div>
@@ -211,12 +212,16 @@
       </div>
       <div class="graf-container">
         <h2>Статистика выручки</h2>
-        <div class="graf-content"></div>
+        <div class="graf-content">
+          <canvas class="canvas-1 graf-js" data-value="[0, 20, 150, 40, 140, 0, 180]" data-sign="[&quot;1.12.19&quot;, &quot;2.12.19&quot;, &quot;3.12.19&quot;, &quot;4.12.19&quot;, &quot;5.12.19&quot;, &quot;6.12.19&quot;, &quot;7.12.19&quot;]"></canvas>
+        </div>
       </div>
       <div class="graf-container">
         <h2>
            Статистика устройств: диагностированных, <b>отремонтированных, </b>все</h2>
-        <div class="graf-content"></div>
+        <div class="graf-content">
+          <canvas class="canvas-2 graf-js" data-value="[100, 20, 150, 40, 140, 0, 100]" data-sign="[&quot;1.12.19&quot;, &quot;2.12.19&quot;, &quot;3.12.19&quot;, &quot;4.12.19&quot;, &quot;5.12.19&quot;, &quot;6.12.19&quot;, &quot;7.12.19&quot;]"></canvas>
+        </div>
       </div>
     </div>
     <!-- main-container-->

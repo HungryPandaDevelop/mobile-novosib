@@ -68,7 +68,7 @@ html
 						h3 Ваша зарплата 
 						.cell-inner
 							.pay_price-box
-								img(src="../images/ico-4.jpg")
+								img(src="../images/payment-method.png")
 								h3 23440.55 Руб.
 								div Ваша зарплата
 							.line
@@ -134,12 +134,20 @@ html
 			.graf-container
 				h2 Статистика выручки
 				.graf-content
+					canvas.canvas-1.graf-js(
+						data-value="[0, 20, 150, 40, 140, 0, 180]"
+						data-sign='["1.12.19", "2.12.19", "3.12.19", "4.12.19", "5.12.19", "6.12.19", "7.12.19"]'
+						)
 			.graf-container
 				h2 
 					|Статистика устройств: диагностированных, 
 					b отремонтированных, 
 					|все
 				.graf-content
+					canvas.canvas-2.graf-js(
+						data-value="[100, 20, 150, 40, 140, 0, 100]"
+						data-sign='["1.12.19", "2.12.19", "3.12.19", "4.12.19", "5.12.19", "6.12.19", "7.12.19"]'
+						)
 		// main-container
 		// footer
 		include partials/footer.pug

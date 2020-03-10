@@ -392,7 +392,7 @@ textarea {
 .special-checkbox .sc-item {
   display: inline-block;
   width: 18%;
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: solid 1px #00b7f4;
   position: relative;
@@ -420,6 +420,12 @@ textarea {
 }
 .special-checkbox .sc-item.active .img-hover, .special-checkbox .sc-item:hover .img-hover {
   display: block;
+}
+.special-checkbox .sc-item.in-img {
+  border: 0;
+}
+.special-checkbox .sc-item.in-img.active, .special-checkbox .sc-item.in-img:hover {
+  background: none;
 }
 
 /*-----forms-----*/
@@ -801,6 +807,11 @@ header .search-wrap {
   font-size: inherit;
   border-top: 1px solid #979797;
   padding-top: 4px;
+}
+
+.graf-js {
+  width: 100%;
+  height: 100%;
 }
 
 /*-----content-----*/

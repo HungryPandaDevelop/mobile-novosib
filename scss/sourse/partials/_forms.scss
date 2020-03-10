@@ -182,12 +182,14 @@ textarea {
   .sc-item {
     display: inline-block;
     width: 18%;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
     border: solid 1px $blueColor;
     position: relative;
     text-align: center;
     cursor: pointer;
+
+
 
     img {
       @include positionElement(100%, 100%);
@@ -208,6 +210,15 @@ textarea {
 
       .img-hover {
         display: block;
+      }
+    }
+
+    &.in-img {
+      border: 0;
+
+      &.active,
+      &:hover {
+        background: none;
       }
     }
   }
