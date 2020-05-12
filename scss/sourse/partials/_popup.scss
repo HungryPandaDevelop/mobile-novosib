@@ -63,6 +63,7 @@
       margin-right: 15px;
       color: $whiteColor;
       background: $blueColor;
+      height: auto;
 
       &.active,
       &:hover {
@@ -72,3 +73,52 @@
     }
   }
 }
+
+
+/*enter popup*/
+.outer-wrap {
+  height: 100vh;
+  display: flex;
+}
+
+.enter-popup {
+  margin: auto;
+}
+
+.enter-head {
+  text-align: center;
+
+  .logo {
+    width: 200px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
+.enter-form {
+  width: 660px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+
+  input,
+  .custom-select {
+    margin-bottom: 15px;
+  }
+
+  .inner-wrap {
+    width: 64%;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 48%;
+    padding: 9px 10px;
+  }
+}
+
+/*enter popup*/

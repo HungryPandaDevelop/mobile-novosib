@@ -11,54 +11,63 @@
             li.active
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/home.png")
+                  img.hover(src="../images/home-w.png")
                 span Главная
             li 
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/interface.png")
+                  img.hover(src="../images/interface-w.png")
                 span Создать заказ
             li 
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/commerce-and-shopping.png")
+                  img.hover(src="../images/commerce-and-shopping-w.png")
                 span Продать товар
             li 
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/business-and-finance.png")
+                  img.hover(src="../images/business-and-finance-w.png")
                 span Клиенты
-            li 
+            li
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/business.png")
+                  img.hover(src="../images/business-w.png")
                 span Сотрудники
             li 
               a(href="#")
                 i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/shipping-and-delivery.png")
+                  img.hover(src="../images/shipping-and-delivery-w.png")
                 span Заказы
             li 
               a(href="#")
                 i
-                  img(src="../images/home.png")
-                span Поиск по типу работы
-            li 
-              a(href="#")
-                i
-                  img(src="../images/home.png")
+                  img.no-hover(src="../images/store.png")
+                  img.hover(src="../images/store-w.png")
                 span Склад
       nav.nav-second
         ul.ln
-          li 
+          li
+            ul.popup-settings
+              each val in ["1","2","3","5","6"]
+                li
+                  a(href="#") Пункт меню
+                    = val
             a(href="#")
               i
-                img(src="../images/home.png")
+                img.no-hover(src="../images/interface-2.png")
+                img.hover(src="../images/interface-2-w.png")
               span Настройки
           li 
             a(href="#")
               i
-                img(src="../images/home.png")
+                img.no-hover(src="../images/multimedia-option.png")
+                img.hover(src="../images/multimedia-option-w.png")
               span Выход
       .logo
         img(src="../images/logo.png")

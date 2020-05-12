@@ -1,0 +1,31 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+
+
+		
+		// main-container
+		.outer-wrap
+			.enter-popup
+				.enter-head
+					img.logo(src="../images/logo-color.png", alt="")
+					h1  Вход в CRM
+				.enter-form
+					.inner-wrap
+						input(type="text" placeholder="Введите Email")
+						input(type="text" placeholder="Введите пароль")
+						label(for="select3") Выберете филлиал
+						select(name="select3").style-select
+							option 1
+							option 2
+						.btn-wrap.btns-justify
+							a.btn.btn-large.green(href="#") Войти
+							a.btn.btn-large.border-red(href="#") Регистрация
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+
