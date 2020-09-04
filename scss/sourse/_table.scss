@@ -32,4 +32,17 @@
 
 .search-table {
   max-width: 60%;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-ws {
+  display: inline-block;
+  width: 39%;
+
+  .btn {
+    padding: 6px 16px;
+    width: 130px;
+    margin: 0 10px;
+  }
 }

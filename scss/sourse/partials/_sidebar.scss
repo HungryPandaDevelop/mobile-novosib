@@ -87,6 +87,19 @@
       padding-left: 38px;
       position: relative;
 
+      em {
+        @include positionElement(15px, 15px, -7px, -7px, right);
+        z-index: 2;
+        background: red;
+        color: $whiteColor;
+        font-size: 10px;
+        font-style: normal;
+        border-radius: 100%;
+        text-align: center;
+
+        line-height: 1.6;
+      }
+
       &:hover,
       &.active {
         color: $whiteColor;

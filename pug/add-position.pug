@@ -1,0 +1,61 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+ 
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		 
+		// main-container
+		.main-container
+			header
+				h1 Добавить позицию в номенклатуру
+			.content-grid
+				.col-8
+					.cell-content 
+						h3 Информация о позиции
+						.cell-inner
+							.content-grid
+								.col-10
+									div
+										h4 Наименование
+										input(type="text" placeholder="Выберете сотрудника")
+										h4 Категория
+										h4 Категория
+										select(name="select").style-select
+											option 1
+											option 2
+											option 3
+										h4 Артикул
+										textarea(placeholder="Введите текст задачи")
+										h4 Штрихкод
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Цвет
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Дополнительно(Запчасти)
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Модель
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Качество
+										h4 Качество
+										select(name="select").style-select
+											option 1
+											option 2
+											option 3
+										h4 Розничная
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Оптовая
+										input(type="text" placeholder="Общая стоимость...")
+										h4 Закупочная
+										input(type="text" placeholder="Общая стоимость...")
+						.btn-wrap.btns-justify.btns-half-align
+							a.btn.btn-large.green.large-width(href="#") Сохранить
+							a.btn.btn-large.border-red(href="#") Отмена
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+

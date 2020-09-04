@@ -96,4 +96,13 @@ $(document).ready(function () {
     var grafIndex = index + 1;
     createChart(".canvas-" + grafIndex, $(".canvas-" + grafIndex).data("value"), $(".canvas-" + grafIndex).data("sign"));
   });
+
+
+  $(".btn-list li").on('click', function () {
+    $(this).parents(".btn-list").find("span").text($(this).text());
+  });
+
+  $(".btn-edit").on('click', function () {
+    $(this).addClass('active');
+  });
 });

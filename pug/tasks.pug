@@ -12,10 +12,10 @@ html
 		// main-container
 		.main-container
 			header
-				h1 Сотрудники
+				h1 Задачи 
 					i.plus +
 			.search-wrap.search-table
-				input(type="text")
+				input(type="text" placeholder="Введите тип работы…")
 				i.search-ico
 			.cell-content.table-container
 				.cell-inner
@@ -23,20 +23,26 @@ html
 						thead
 							tr
 								th ID
-								th Сотрудник
-								th Телефон
-								th Процент 
-								th E-mail 
-								th Дата регистрации
+								th Модель
+								th Статус
+								th Устройство
+								th Клиент
+								th Создать заказ 
 						tbody
 							each val in ['1', '1', '1', '1', '1', '1', '1']
 								tr
 									td #362
 									td Ronald Garcia
-									td 8 (777) 777-77-77
-									td 20%
-									td name@domain.ru
-									td 11:11 12.12.2009
+									td Ожидает перевозки
+									td IPhone 6s plus
+									td Ronald Garcia
+									td 
+										.btn.btn-list
+											span Поставлена
+											ul 
+												li Принято
+												li В работе
+												li Выполнено
 		// main-container
 		// footer
 		include partials/footer.pug

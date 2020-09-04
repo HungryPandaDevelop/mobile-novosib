@@ -1,0 +1,39 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+ 
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		 
+		// main-container
+		.main-container
+			header
+				h1 Поставить задачу
+			.content-grid
+				.col-8
+					.cell-content 
+						h3 Информация о задачи
+						.cell-inner
+							.content-grid
+								.col-10
+									div
+										h4 Кому поставить задачу
+										input(type="text" placeholder="Выберете сотрудника")
+										h4 Название задачи
+										input(type="text" placeholder="Введите название задачи")
+										h4 Что нужно сделать
+										textarea(placeholder="Введите текст задачи")
+										h4 Дата выполнения
+										input(type="date" placeholder="Общая стоимость...")
+						.btn-wrap.btns-justify.btns-half-align
+							a.btn.btn-large.green.large-width(href="#") Принять
+							a.btn.btn-large.border-red(href="#") Отмена
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+
