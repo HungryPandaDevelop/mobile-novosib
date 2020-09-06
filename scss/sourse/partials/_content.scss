@@ -261,3 +261,23 @@ i.plus {
     background: $grayColor;
   }
 }
+
+.btn-edit {
+  width: 74px;
+
+  &.active {
+    background: $blueColor;
+    color: $whiteColor;
+  }
+}
+
+.edit-field {
+  input {
+
+    border: 1px solid $whiteColor;
+
+    &.edit-input {
+      border-color: $blackColor;
+    }
+  }
+}

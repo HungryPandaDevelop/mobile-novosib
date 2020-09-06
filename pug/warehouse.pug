@@ -31,13 +31,10 @@ html
 						tbody
 							each val in ['1', '1', '1', '1', '1', '1', '1']
 								tr
-									td #362
-									td 432443248234
-									td Дисплейный можудб
-									td IPhone 6s plus
-									td 268
-									td IPhone 6s plus
-									td 
+									each val in ["#362","432443248234","Дисплейный можудб","IPhone 6s plus","268","IPhone 6s plus",]
+										td.edit-field
+											input(type="text" value=val disabled)
+									td
 										a(href="#").btn.btn-empty.btn-edit Ред. 
 		// main-container
 		// footer

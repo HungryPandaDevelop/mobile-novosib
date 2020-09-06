@@ -9,6 +9,8 @@
     td {
       border-bottom: 1px solid $grayColorDark;
       padding: 5px 5px 5px 10px;
+
+      vertical-align: baseline;
     }
 
     tr:last-child td {

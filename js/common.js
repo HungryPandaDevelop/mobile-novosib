@@ -103,6 +103,14 @@ $(document).ready(function () {
   });
 
   $(".btn-edit").on('click', function () {
-    $(this).addClass('active');
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active').text('Ред.');
+
+      $(this).parents('tr').find('.edit-field input').removeClass("edit-input").prop('disabled', true);
+    } else {
+      $(this).addClass('active').text('Сохр.');
+
+      $(this).parents('tr').find('.edit-field input').addClass("edit-input").prop('disabled', false);
+    }
   });
 });
