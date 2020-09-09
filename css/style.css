@@ -822,6 +822,8 @@ header .search-wrap {
   background: #ffffff;
   padding: 16px 24px;
   margin: 0 0 16px;
+  position: relative;
+  overflow-x: auto;
 }
 .cell-content .cell-inner .line {
   padding: 5px 5px 5px 10px;
@@ -949,7 +951,7 @@ header .search-wrap {
   width: 180px;
 }
 
-i.plus {
+a.plus {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -962,8 +964,9 @@ i.plus {
   cursor: pointer;
   vertical-align: inherit;
   margin: 0 15px;
+  text-decoration: none;
 }
-i.plus:hover {
+a.plus:hover {
   background: #00b7f4;
   color: #ffffff;
 }
@@ -1018,6 +1021,7 @@ i.plus:hover {
 .table-container table {
   width: 100%;
   border-spacing: 0;
+  padding-right: 30px;
 }
 .table-container table th,
 .table-container table td {

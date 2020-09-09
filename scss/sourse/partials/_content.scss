@@ -56,6 +56,8 @@
     background: $whiteColor;
     padding: 16px 24px;
     margin: 0 0 16px;
+    position: relative;
+    overflow-x: auto;
 
     .line {
       padding: 5px 5px 5px 10px;
@@ -202,7 +204,7 @@
 }
 
 
-i.plus {
+a.plus {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -215,6 +217,7 @@ i.plus {
   cursor: pointer;
   vertical-align: inherit;
   margin: 0 15px;
+  text-decoration: none;
 
   &:hover {
     background: $blueColor;
