@@ -3,25 +3,47 @@
     .close
     h2 Изменение кассы
     .special-checkbox
-      .sc-item.active Выдача
-      .sc-item Внесение
-      .sc-item Перемещение
+      .sc-item.active(data-active="1") Выдача
+      .sc-item(data-active="2") Внесение
+      .sc-item(data-active="3") Перемещение
     div.circle-input-wrap
       h4 Сумма
       input(type="text")
-    div
-      h4 Статья расходов
-      label(for="select2") Зарплата
-      select(name="select2").style-select
-        option 1
-        option 2
-        option 3
-    div
-      h4 Кому
-      label(for="select2") Сергей Сергеевский
-      select(name="select2").style-select
-        option 1
-        option 2
-        option 3
+    .popup-item.popup-item-1.active
+      div
+        h4 Статья расходов
+        input(type="text" placeholder="Введите описание")
+      div
+        h4 Кому
+        input(type="text" placeholder="Введите описание")
+      div
+        h4 Филиал
+        label(for="select2") Сергей Сергеевский
+        select(name="select2").style-select
+          option 1
+          option 2
+          option 3
+    .popup-item.popup-item-2
+      div
+        h4 Статья расходов
+        input(type="text" placeholder="Введите описание")
+    .popup-item.popup-item-3
+      div
+        h4 Из филиала
+        label(for="select2") Зарплата
+        select(name="select2").style-select
+          option 1
+          option 2
+          option 3
+      div
+        h4 В филиал
+        label(for="select2") Зарплата
+        select(name="select2").style-select
+          option 1
+          option 2
+          option 3
+      div
+        h4 Описание
+        input(type="text" placeholder="Введите описание")
     .btn-wc 
       a.btn.btn-large.green Принять

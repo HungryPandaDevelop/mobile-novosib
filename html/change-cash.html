@@ -18,31 +18,62 @@
         <div class="close"></div>
         <h2>Изменение кассы</h2>
         <div class="special-checkbox">
-          <div class="sc-item active">Выдача</div>
-          <div class="sc-item">Внесение</div>
-          <div class="sc-item">Перемещение</div>
+          <div class="sc-item active" data-active="1">Выдача</div>
+          <div class="sc-item" data-active="2">Внесение</div>
+          <div class="sc-item" data-active="3">Перемещение</div>
         </div>
         <div class="circle-input-wrap">
           <h4>Сумма</h4>
           <input type="text">
         </div>
-        <div>
-          <h4>Статья расходов</h4>
-          <label for="select2">Зарплата</label>
-          <select class="style-select" name="select2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+        <div class="popup-item popup-item-1 active">
+          <div>
+            <h4>Статья расходов</h4>
+            <input type="text" placeholder="Введите описание">
+          </div>
+          <div>
+            <h4>Кому</h4>
+            <input type="text" placeholder="Введите описание">
+          </div>
+          <div>
+            <h4>Филиал</h4>
+            <label for="select2">Сергей Сергеевский</label>
+            <select class="style-select" name="select2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <h4>Кому</h4>
-          <label for="select2">Сергей Сергеевский</label>
-          <select class="style-select" name="select2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+        <div class="popup-item popup-item-2">
+          <div>
+            <h4>Статья расходов</h4>
+            <input type="text" placeholder="Введите описание">
+          </div>
+        </div>
+        <div class="popup-item popup-item-3">
+          <div>
+            <h4>Из филиала</h4>
+            <label for="select2">Зарплата</label>
+            <select class="style-select" name="select2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <div>
+            <h4>В филиал</h4>
+            <label for="select2">Зарплата</label>
+            <select class="style-select" name="select2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <div>
+            <h4>Описание</h4>
+            <input type="text" placeholder="Введите описание">
+          </div>
         </div>
         <div class="btn-wc"> <a class="btn btn-large green">Принять</a></div>
       </div>

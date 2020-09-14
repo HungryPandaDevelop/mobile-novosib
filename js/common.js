@@ -16,6 +16,8 @@ $(document).ready(function () {
   var specialCheckbox = $(".special-checkbox .sc-item");
   specialCheckbox.on("click", function () {
     specialCheckbox.removeClass("active").eq($(this).index()).addClass("active");
+    $(".popup-item").removeClass("active");
+    $(".popup-item-" + $(this).data("active")).addClass("active");
   });
 
 

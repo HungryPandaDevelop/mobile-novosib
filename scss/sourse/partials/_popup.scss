@@ -74,6 +74,14 @@
   }
 }
 
+.popup-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+}
 
 /*enter popup*/
 .outer-wrap {

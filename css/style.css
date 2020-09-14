@@ -522,6 +522,13 @@ textarea {
   color: #00b7f4;
 }
 
+.popup-item {
+  display: none;
+}
+.popup-item.active {
+  display: block;
+}
+
 /*enter popup*/
 .outer-wrap {
   height: 100vh;
