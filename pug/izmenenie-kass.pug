@@ -1,0 +1,43 @@
+doctype html
+html
+	body
+		// head
+		include partials/head.pug 
+		// head
+
+		// sidebar
+		include partials/sidebar.pug
+		// sidebar
+		
+		// main-container
+		.main-container
+			header
+				h1 Изменение касс
+			.head-filter
+				input(type="text" placeholder="Филлиал")
+				a.btn.btn-empty(href="#") Показать
+			.cell-content.table-container
+				.cell-inner
+					table
+						thead
+							tr
+								th ID Задачи
+								th Пользователь
+								th Вид операции
+								th Сумма 
+								th Описание
+								th Дата постановки
+						tbody
+							each val in ['1', '1', '1', '1', '1', '1', '1']
+								tr
+									td Дисплай
+									td Дисплай
+									td HF-35329
+									td 20000000
+									td 2200
+									td 2200
+		// main-container
+		// footer
+		include partials/footer.pug
+		// footer
+
